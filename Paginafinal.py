@@ -748,11 +748,11 @@ elif opciones == 'Japón':
                 • Degustar las ostras locales y dulces típicos (momiji manju).
                 """
                 st.markdown(f"<div style='text-align: justify; font-size: 14px; color: #555;'>{info_itsukushima}</div>", unsafe_allow_html=True)
-          texto = """
+          texto_desc = """
             Para que conozcas exactamente donde se encuentran ubicados estos lugares,
             puedes visualizar nuestro mapa intectivo!!!
             """
-        st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto_desc}</div>", unsafe_allow_html=True)
         with open("mapa_japon.html", "r", encoding="utf-8") as f:
             html_content = f.read()
 
