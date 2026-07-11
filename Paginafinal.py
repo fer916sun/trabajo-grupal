@@ -299,7 +299,6 @@ elif opciones == 'Corea del Sur':
             st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_squid}</div>", unsafe_allow_html=True)
         st.markdown("-----------------------------")
 
-        # ================= 4. TRAIN TO BUSAN (INVERTIDO) =================
         col1, col2 = st.columns(2, vertical_alignment="center")
         with col1:
             texto_busan = """
@@ -318,7 +317,6 @@ elif opciones == 'Corea del Sur':
             st.image("busan.jpg", caption="Aclamada mundialmente como una de las mejores películas de zombies de la historia.", use_container_width=True)
         st.markdown("-----------------------------")
 
-        # ================= 5. CRASH LANDING ON YOU =================
         col1, col2 = st.columns(2, vertical_alignment="center")
         with col1:
             st.subheader("Crash Landing on You (사랑의 불시착)")
@@ -422,6 +420,17 @@ elif opciones == 'Corea del Sur':
                 """
                 st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{info_nami}</div>", unsafe_allow_html=True)
         
+        with open("mapa_corea.html", "r", encoding="utf-8") as f:
+            html_content = f.read()
+
+        # Mostrar el mapa interactivo
+        components.html(
+            html_content,
+            height=600
+        )
+# Para que el usuario pueda tener conocimiento del lugar en el mapa de estos sitios turísticos
+    # Se muestra un mapa interactivo
+                
     # Formato A
     # Agregamos todo los videos realizados en las prácticas anteriores
     # Muestra un subtítulo para identificar el contenido del video
