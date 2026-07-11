@@ -419,7 +419,7 @@ elif opciones == 'Corea del Sur':
                 st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{info_nami}</div>", unsafe_allow_html=True)
         texto = """
             Para que conozcas exactamente donde se encuentran ubicados estos lugares,
-            puedes visualizar nuestro mapa intectivo!!!
+            puedes visualizar nuestro mapa interactivo!!!
             """
         st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto}</div>", unsafe_allow_html=True)
         with open("mapa_corea.html", "r", encoding="utf-8") as f:
@@ -750,7 +750,7 @@ elif opciones == 'Japón':
                 st.markdown(f"<div style='text-align: justify; font-size: 14px; color: #555;'>{info_itsukushima}</div>", unsafe_allow_html=True)
         texto_desc = """
             Para que conozcas exactamente donde se encuentran ubicados estos lugares,
-            puedes visualizar nuestro mapa intectivo!!!
+            puedes visualizar nuestro mapa interactivo!!!
             """
         st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto_desc}</div>", unsafe_allow_html=True)
         with open("mapa_japon.html", "r", encoding="utf-8") as f:
@@ -1052,7 +1052,7 @@ elif opciones == 'Tailandia':
                 st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{info_suthep}</div>", unsafe_allow_html=True)
         texto = """
             Para que conozcas exactamente donde se encuentran ubicados estos lugares,
-            puedes visualizar nuestro mapa intectivo!!!
+            puedes visualizar nuestro mapa interactivo!!!
             """
         st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto}</div>", unsafe_allow_html=True)
         with open("mapa_tailandia.html", "r", encoding="utf-8") as f:
