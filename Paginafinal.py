@@ -261,7 +261,6 @@ elif opciones == 'Corea del Sur':
             st.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_mandarinas}</div>", unsafe_allow_html=True)
         st.markdown("-----------------------------")
 
-        # ================= 2. PARASITE (INVERTIDO) =================
         col1, col2 = st.columns(2, vertical_alignment="center")
         with col1:
             texto_parasite = """
@@ -280,7 +279,6 @@ elif opciones == 'Corea del Sur':
             st.image("parasite.jpg", caption="La histórica ganadora de 4 Premios Óscar, incluyendo Mejor Película.", use_container_width=True)
         st.markdown("-----------------------------")
 
-        # ================= 3. SQUID GAME =================
         col1, col2 = st.columns(2, vertical_alignment="center")
         with col1:
             st.subheader("Squid Game (오징어 게임)")
@@ -419,14 +417,18 @@ elif opciones == 'Corea del Sur':
                 • Visitar los spots fotográficos famosos por salir en dramas románticos.
                 """
                 st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{info_nami}</div>", unsafe_allow_html=True)
-        
+        texto = """
+            Para que conozcas exactamente donde se encuentran ubicados estos lugares,
+            puedes visualizar nuestro mapa intectivo!!!
+            """
+        st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto}</div>", unsafe_allow_html=True)
         with open("mapa_corea.html", "r", encoding="utf-8") as f:
             html_content = f.read()
 
         # Mostrar el mapa interactivo
         components.html(
             html_content,
-            height=600
+            height=400
         )
 # Para que el usuario pueda tener conocimiento del lugar en el mapa de estos sitios turísticos
     # Se muestra un mapa interactivo
@@ -746,7 +748,19 @@ elif opciones == 'Japón':
                 • Degustar las ostras locales y dulces típicos (momiji manju).
                 """
                 st.markdown(f"<div style='text-align: justify; font-size: 14px; color: #555;'>{info_itsukushima}</div>", unsafe_allow_html=True)
+          texto = """
+            Para que conozcas exactamente donde se encuentran ubicados estos lugares,
+            puedes visualizar nuestro mapa intectivo!!!
+            """
+        st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto}</div>", unsafe_allow_html=True)
+        with open("mapa_japon.html", "r", encoding="utf-8") as f:
+            html_content = f.read()
 
+        # Mostrar el mapa interactivo
+        components.html(
+            html_content,
+            height=400
+        )
         # Cargar el mapa HTML generado previamente
         # with open("mapa.html", "r", encoding="utf-8") as f:
         #    html_content = f.read()
@@ -1036,3 +1050,16 @@ elif opciones == 'Tailandia':
                 • Participar u observar ceremonias budistas tradicionales.
                 """
                 st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{info_suthep}</div>", unsafe_allow_html=True)
+          texto = """
+            Para que conozcas exactamente donde se encuentran ubicados estos lugares,
+            puedes visualizar nuestro mapa intectivo!!!
+            """
+        st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{texto}</div>", unsafe_allow_html=True)
+        with open("mapa_tailandia.html", "r", encoding="utf-8") as f:
+            html_content = f.read()
+
+        # Mostrar el mapa interactivo
+        components.html(
+            html_content,
+            height=400
+        )
