@@ -1050,7 +1050,7 @@ elif opciones == 'Tailandia':
                 • Participar u observar ceremonias budistas tradicionales.
                 """
                 st.markdown(f"<div style='text-align: justify; font-size: 13px; color: #555;'>{info_suthep}</div>", unsafe_allow_html=True)
-          texto = """
+        texto = """
             Para que conozcas exactamente donde se encuentran ubicados estos lugares,
             puedes visualizar nuestro mapa intectivo!!!
             """
