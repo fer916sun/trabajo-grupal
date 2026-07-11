@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d494422e29985c8711f807ab7a5bfaae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d494422e29985c8711f807ab7a5bfaae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d494422e29985c8711f807ab7a5bfaae = L.map(
+                "map_d494422e29985c8711f807ab7a5bfaae",
+                {
+                    center: [35.3606, 136.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5687126467fdcc8fc35b7b9a5e7177ad = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5687126467fdcc8fc35b7b9a5e7177ad.addTo(map_d494422e29985c8711f807ab7a5bfaae);
+        
+    
+            var marker_e77c6ba1808e9d84f78f808379614da6 = L.marker(
+                [34.9671, 135.7727],
+                {
+}
+            ).addTo(map_d494422e29985c8711f807ab7a5bfaae);
+        
+    
+            var icon_2a78973529c0daf50fa8fe454d6f1a0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad30a25caa878019513204da5c7846b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1fd01815c069ba86b995add45e001525 = $(`<div id="html_1fd01815c069ba86b995add45e001525" style="width: 100.0%; height: 100.0%;"><b>Fushimi Inari Taisha</b><br>Kioto: El famoso sendero de miles de torii rojos.</div>`)[0];
+                popup_ad30a25caa878019513204da5c7846b2.setContent(html_1fd01815c069ba86b995add45e001525);
+            
+        
+
+        marker_e77c6ba1808e9d84f78f808379614da6.bindPopup(popup_ad30a25caa878019513204da5c7846b2)
+        ;
+
+        
+    
+    
+            marker_e77c6ba1808e9d84f78f808379614da6.bindTooltip(
+                `<div>
+                     Fushimi Inari Taisha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e77c6ba1808e9d84f78f808379614da6.setIcon(icon_2a78973529c0daf50fa8fe454d6f1a0b);
+            
+    
+            var marker_c774d0c4a4774ae7440c6437cf60346c = L.marker(
+                [35.3606, 138.7274],
+                {
+}
+            ).addTo(map_d494422e29985c8711f807ab7a5bfaae);
+        
+    
+            var icon_3278da567f97605034d6d50df28a8d0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4b742947eb3f4a6064de17c791c60ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe9a985960d6345710ff48834af643b5 = $(`<div id="html_fe9a985960d6345710ff48834af643b5" style="width: 100.0%; height: 100.0%;"><b>Monte Fuji</b><br>Shizuoka/Yamanashi: El pico más alto y sagrado de Japón.</div>`)[0];
+                popup_d4b742947eb3f4a6064de17c791c60ae.setContent(html_fe9a985960d6345710ff48834af643b5);
+            
+        
+
+        marker_c774d0c4a4774ae7440c6437cf60346c.bindPopup(popup_d4b742947eb3f4a6064de17c791c60ae)
+        ;
+
+        
+    
+    
+            marker_c774d0c4a4774ae7440c6437cf60346c.bindTooltip(
+                `<div>
+                     Monte Fuji
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c774d0c4a4774ae7440c6437cf60346c.setIcon(icon_3278da567f97605034d6d50df28a8d0b);
+            
+    
+            var marker_335445d21a9e7deda747dff0461584f7 = L.marker(
+                [35.6595, 139.7005],
+                {
+}
+            ).addTo(map_d494422e29985c8711f807ab7a5bfaae);
+        
+    
+            var icon_5fc0827a8923b7bf5c78e28e2b0cecd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bb2d9b0481346387aaf5929d31d569c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_960a39db501702d399fb7cac8dc3b70b = $(`<div id="html_960a39db501702d399fb7cac8dc3b70b" style="width: 100.0%; height: 100.0%;"><b>Shibuya Crossing</b><br>Tokio: El cruce peatonal más concurrido del mundo.</div>`)[0];
+                popup_2bb2d9b0481346387aaf5929d31d569c.setContent(html_960a39db501702d399fb7cac8dc3b70b);
+            
+        
+
+        marker_335445d21a9e7deda747dff0461584f7.bindPopup(popup_2bb2d9b0481346387aaf5929d31d569c)
+        ;
+
+        
+    
+    
+            marker_335445d21a9e7deda747dff0461584f7.bindTooltip(
+                `<div>
+                     Shibuya Crossing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_335445d21a9e7deda747dff0461584f7.setIcon(icon_5fc0827a8923b7bf5c78e28e2b0cecd0);
+            
+    
+            var marker_100a434a049d05af8defb8664c1e6950 = L.marker(
+                [35.0156, 135.6715],
+                {
+}
+            ).addTo(map_d494422e29985c8711f807ab7a5bfaae);
+        
+    
+            var icon_1b4fe9e1b7e01aac8121b5fd9cbd5915 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1ebe67a9efa36510f6cef22208e1b33 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_06a5943fee15f52605e91d97f8c91de0 = $(`<div id="html_06a5943fee15f52605e91d97f8c91de0" style="width: 100.0%; height: 100.0%;"><b>Bosque de Arashiyama</b><br>Kioto: Histórico y pacífico sendero entre altos bambúes.</div>`)[0];
+                popup_a1ebe67a9efa36510f6cef22208e1b33.setContent(html_06a5943fee15f52605e91d97f8c91de0);
+            
+        
+
+        marker_100a434a049d05af8defb8664c1e6950.bindPopup(popup_a1ebe67a9efa36510f6cef22208e1b33)
+        ;
+
+        
+    
+    
+            marker_100a434a049d05af8defb8664c1e6950.bindTooltip(
+                `<div>
+                     Bosque de Arashiyama
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_100a434a049d05af8defb8664c1e6950.setIcon(icon_1b4fe9e1b7e01aac8121b5fd9cbd5915);
+            
+    
+            var marker_b8b10e75b8b49c3b230e3ab50e965dbf = L.marker(
+                [34.296, 132.3199],
+                {
+}
+            ).addTo(map_d494422e29985c8711f807ab7a5bfaae);
+        
+    
+            var icon_f3031a92e4d824f4d588655990b2b6ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac9fd57a5a0accdecd8003404415dc3b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0148fddf9403e38962a97bf186df2a71 = $(`<div id="html_0148fddf9403e38962a97bf186df2a71" style="width: 100.0%; height: 100.0%;"><b>Santuario Itsukushima</b><br>Hiroshima: El icónico torii flotante en el mar.</div>`)[0];
+                popup_ac9fd57a5a0accdecd8003404415dc3b.setContent(html_0148fddf9403e38962a97bf186df2a71);
+            
+        
+
+        marker_b8b10e75b8b49c3b230e3ab50e965dbf.bindPopup(popup_ac9fd57a5a0accdecd8003404415dc3b)
+        ;
+
+        
+    
+    
+            marker_b8b10e75b8b49c3b230e3ab50e965dbf.bindTooltip(
+                `<div>
+                     Santuario Itsukushima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8b10e75b8b49c3b230e3ab50e965dbf.setIcon(icon_f3031a92e4d824f4d588655990b2b6ca);
+            
+</script>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e6da116a8f9b9a1d5d121e06cbbcc02e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e6da116a8f9b9a1d5d121e06cbbcc02e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e6da116a8f9b9a1d5d121e06cbbcc02e = L.map(
+                "map_e6da116a8f9b9a1d5d121e06cbbcc02e",
+                {
+                    center: [35.9078, 127.7669],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_288602809f4c4bee3589f3c3943ae9c4 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_288602809f4c4bee3589f3c3943ae9c4.addTo(map_e6da116a8f9b9a1d5d121e06cbbcc02e);
+        
+    
+            var marker_879fad539a5ed5a62cddd51abdc29106 = L.marker(
+                [37.5665, 126.978],
+                {
+}
+            ).addTo(map_e6da116a8f9b9a1d5d121e06cbbcc02e);
+        
+    
+            var icon_35caae46cdc6a32f5b96a59958cb3b3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07160e7141151c8acb8a13e07614bc98 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_172c5db71287f23eb9847a88eb833d83 = $(`<div id="html_172c5db71287f23eb9847a88eb833d83" style="width: 100.0%; height: 100.0%;"><b>Seúl</b><br>Capital: Palacio Gyeongbokgung y distritos tecnológicos.</div>`)[0];
+                popup_07160e7141151c8acb8a13e07614bc98.setContent(html_172c5db71287f23eb9847a88eb833d83);
+            
+        
+
+        marker_879fad539a5ed5a62cddd51abdc29106.bindPopup(popup_07160e7141151c8acb8a13e07614bc98)
+        ;
+
+        
+    
+    
+            marker_879fad539a5ed5a62cddd51abdc29106.bindTooltip(
+                `<div>
+                     Seúl
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_879fad539a5ed5a62cddd51abdc29106.setIcon(icon_35caae46cdc6a32f5b96a59958cb3b3f);
+            
+    
+            var marker_b127a58d54458a18b1eecc938ee7a02a = L.marker(
+                [33.3792, 126.5312],
+                {
+}
+            ).addTo(map_e6da116a8f9b9a1d5d121e06cbbcc02e);
+        
+    
+            var icon_d94a4eaae8a3b0e6efb057c317c88efa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_323bb4d84a327d3e578cc1c1f7784237 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_95a6504e3c807ecbb476c3aca64cacf6 = $(`<div id="html_95a6504e3c807ecbb476c3aca64cacf6" style="width: 100.0%; height: 100.0%;"><b>Isla de Jeju</b><br>Naturaleza: Cráteres volcánicos, playas y túneles de lava.</div>`)[0];
+                popup_323bb4d84a327d3e578cc1c1f7784237.setContent(html_95a6504e3c807ecbb476c3aca64cacf6);
+            
+        
+
+        marker_b127a58d54458a18b1eecc938ee7a02a.bindPopup(popup_323bb4d84a327d3e578cc1c1f7784237)
+        ;
+
+        
+    
+    
+            marker_b127a58d54458a18b1eecc938ee7a02a.bindTooltip(
+                `<div>
+                     Isla de Jeju
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b127a58d54458a18b1eecc938ee7a02a.setIcon(icon_d94a4eaae8a3b0e6efb057c317c88efa);
+            
+    
+            var marker_da14f6a17f468d880d9c55bcc87b6343 = L.marker(
+                [35.1796, 129.0756],
+                {
+}
+            ).addTo(map_e6da116a8f9b9a1d5d121e06cbbcc02e);
+        
+    
+            var icon_d2dcaf1676be26032b3e7fa1247ebb44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_260a939418ad6269ca09f55cbc0d8c91 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_357f0596afc18041b5cbf9896269555f = $(`<div id="html_357f0596afc18041b5cbf9896269555f" style="width: 100.0%; height: 100.0%;"><b>Busan</b><br>Costa: Gamcheon Culture Village y templos junto al mar.</div>`)[0];
+                popup_260a939418ad6269ca09f55cbc0d8c91.setContent(html_357f0596afc18041b5cbf9896269555f);
+            
+        
+
+        marker_da14f6a17f468d880d9c55bcc87b6343.bindPopup(popup_260a939418ad6269ca09f55cbc0d8c91)
+        ;
+
+        
+    
+    
+            marker_da14f6a17f468d880d9c55bcc87b6343.bindTooltip(
+                `<div>
+                     Busan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da14f6a17f468d880d9c55bcc87b6343.setIcon(icon_d2dcaf1676be26032b3e7fa1247ebb44);
+            
+    
+            var marker_3a1d0bc10c071fc1bcd593460837f99f = L.marker(
+                [37.5829, 126.9835],
+                {
+}
+            ).addTo(map_e6da116a8f9b9a1d5d121e06cbbcc02e);
+        
+    
+            var icon_748981cfd1823b42bdf846541e0cda15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fd71459db50e634aa01573653f9a928 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e57cfe7d1bbacd2a6ee9c35e84ec8339 = $(`<div id="html_e57cfe7d1bbacd2a6ee9c35e84ec8339" style="width: 100.0%; height: 100.0%;"><b>Bukchon Hanok Village</b><br>Seúl: Barrio histórico con cientos de casas tradicionales.</div>`)[0];
+                popup_2fd71459db50e634aa01573653f9a928.setContent(html_e57cfe7d1bbacd2a6ee9c35e84ec8339);
+            
+        
+
+        marker_3a1d0bc10c071fc1bcd593460837f99f.bindPopup(popup_2fd71459db50e634aa01573653f9a928)
+        ;
+
+        
+    
+    
+            marker_3a1d0bc10c071fc1bcd593460837f99f.bindTooltip(
+                `<div>
+                     Bukchon Hanok Village
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a1d0bc10c071fc1bcd593460837f99f.setIcon(icon_748981cfd1823b42bdf846541e0cda15);
+            
+    
+            var marker_c30a74984ddaf34f159bb0397e642fd0 = L.marker(
+                [37.7912, 127.5256],
+                {
+}
+            ).addTo(map_e6da116a8f9b9a1d5d121e06cbbcc02e);
+        
+    
+            var icon_baceb612b287a6f14283ea2c242b2964 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80dc5888a5b9722220a64776b39cedda = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7fb7aa295045bbd390783a3f77ccfd7a = $(`<div id="html_7fb7aa295045bbd390783a3f77ccfd7a" style="width: 100.0%; height: 100.0%;"><b>Isla de Nami</b><br>Gangwon: Hermosos senderos arbolados e instagrameables.</div>`)[0];
+                popup_80dc5888a5b9722220a64776b39cedda.setContent(html_7fb7aa295045bbd390783a3f77ccfd7a);
+            
+        
+
+        marker_c30a74984ddaf34f159bb0397e642fd0.bindPopup(popup_80dc5888a5b9722220a64776b39cedda)
+        ;
+
+        
+    
+    
+            marker_c30a74984ddaf34f159bb0397e642fd0.bindTooltip(
+                `<div>
+                     Isla de Nami
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c30a74984ddaf34f159bb0397e642fd0.setIcon(icon_baceb612b287a6f14283ea2c242b2964);
+            
+</script>
+</html>

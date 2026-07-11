@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_91b489f64f044b07e93a4fe499d6784a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_91b489f64f044b07e93a4fe499d6784a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_91b489f64f044b07e93a4fe499d6784a = L.map(
+                "map_91b489f64f044b07e93a4fe499d6784a",
+                {
+                    center: [13.7367, 100.5231],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_910604d715342d41374ba175a28683ea = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_910604d715342d41374ba175a28683ea.addTo(map_91b489f64f044b07e93a4fe499d6784a);
+        
+    
+            var marker_8f4ecc55cc6fbd856beb95ae7bc12465 = L.marker(
+                [13.75, 100.4913],
+                {
+}
+            ).addTo(map_91b489f64f044b07e93a4fe499d6784a);
+        
+    
+            var icon_783171a3086ef3de2f837bd479f953d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e61235cba3f644a9495d28b4feecd99b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f02b7d703134753b6083eed15cd318e = $(`<div id="html_3f02b7d703134753b6083eed15cd318e" style="width: 100.0%; height: 100.0%;"><b>Gran Palacio de Bangkok</b><br>Bangkok: Antigua residencia real y Buda de Esmeralda.</div>`)[0];
+                popup_e61235cba3f644a9495d28b4feecd99b.setContent(html_3f02b7d703134753b6083eed15cd318e);
+            
+        
+
+        marker_8f4ecc55cc6fbd856beb95ae7bc12465.bindPopup(popup_e61235cba3f644a9495d28b4feecd99b)
+        ;
+
+        
+    
+    
+            marker_8f4ecc55cc6fbd856beb95ae7bc12465.bindTooltip(
+                `<div>
+                     Gran Palacio de Bangkok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f4ecc55cc6fbd856beb95ae7bc12465.setIcon(icon_783171a3086ef3de2f837bd479f953d5);
+            
+    
+            var marker_5fb8d1e49f8bec23803e5fa4f78f9d45 = L.marker(
+                [13.7437, 100.4889],
+                {
+}
+            ).addTo(map_91b489f64f044b07e93a4fe499d6784a);
+        
+    
+            var icon_6cf4f9c2981177eea873609a86b4a1a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdeb864cbb3bd5264ce42fefdc23bd68 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8d8d1996af7d6aeee2bb8e03b5b65c64 = $(`<div id="html_8d8d1996af7d6aeee2bb8e03b5b65c64" style="width: 100.0%; height: 100.0%;"><b>Wat Arun</b><br>Bangkok: Majestuoso templo del amanecer junto al río Chao Phraya.</div>`)[0];
+                popup_bdeb864cbb3bd5264ce42fefdc23bd68.setContent(html_8d8d1996af7d6aeee2bb8e03b5b65c64);
+            
+        
+
+        marker_5fb8d1e49f8bec23803e5fa4f78f9d45.bindPopup(popup_bdeb864cbb3bd5264ce42fefdc23bd68)
+        ;
+
+        
+    
+    
+            marker_5fb8d1e49f8bec23803e5fa4f78f9d45.bindTooltip(
+                `<div>
+                     Wat Arun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fb8d1e49f8bec23803e5fa4f78f9d45.setIcon(icon_6cf4f9c2981177eea873609a86b4a1a7);
+            
+    
+            var marker_c0b4c7243ae72f35824062e988b4b9a6 = L.marker(
+                [7.7407, 98.7781],
+                {
+}
+            ).addTo(map_91b489f64f044b07e93a4fe499d6784a);
+        
+    
+            var icon_ab7571cc8f9d23afe5374d536cdf20b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58a8c1f08cc356b5e767b349347cee01 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5ae43a314f3f94699f31175385f48fd = $(`<div id="html_a5ae43a314f3f94699f31175385f48fd" style="width: 100.0%; height: 100.0%;"><b>Islas Phi Phi</b><br>Mar de Andamán: Paraíso tropical de aguas cristalinas.</div>`)[0];
+                popup_58a8c1f08cc356b5e767b349347cee01.setContent(html_a5ae43a314f3f94699f31175385f48fd);
+            
+        
+
+        marker_c0b4c7243ae72f35824062e988b4b9a6.bindPopup(popup_58a8c1f08cc356b5e767b349347cee01)
+        ;
+
+        
+    
+    
+            marker_c0b4c7243ae72f35824062e988b4b9a6.bindTooltip(
+                `<div>
+                     Islas Phi Phi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0b4c7243ae72f35824062e988b4b9a6.setIcon(icon_ab7571cc8f9d23afe5374d536cdf20b5);
+            
+    
+            var marker_98d31be3a640c063ad2bbe0fe6afbdd3 = L.marker(
+                [14.3569, 100.553],
+                {
+}
+            ).addTo(map_91b489f64f044b07e93a4fe499d6784a);
+        
+    
+            var icon_d35fbf28e6a0f17028b20e0eae6e33b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_394ba42fd85763b9421e96eddae8d91e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c0c1ae5bb7078ffeaee2e66b87ea703 = $(`<div id="html_2c0c1ae5bb7078ffeaee2e66b87ea703" style="width: 100.0%; height: 100.0%;"><b>Parque Ayutthaya</b><br>Ayutthaya: Impresionantes ruinas arqueológicas de templos antiguos.</div>`)[0];
+                popup_394ba42fd85763b9421e96eddae8d91e.setContent(html_2c0c1ae5bb7078ffeaee2e66b87ea703);
+            
+        
+
+        marker_98d31be3a640c063ad2bbe0fe6afbdd3.bindPopup(popup_394ba42fd85763b9421e96eddae8d91e)
+        ;
+
+        
+    
+    
+            marker_98d31be3a640c063ad2bbe0fe6afbdd3.bindTooltip(
+                `<div>
+                     Parque Ayutthaya
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98d31be3a640c063ad2bbe0fe6afbdd3.setIcon(icon_d35fbf28e6a0f17028b20e0eae6e33b8);
+            
+    
+            var marker_56779739bc684c0186cd019f2b14640f = L.marker(
+                [18.8042, 98.9215],
+                {
+}
+            ).addTo(map_91b489f64f044b07e93a4fe499d6784a);
+        
+    
+            var icon_ed6189bee5ef7764e670a1d3d24335a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6d48dfa95b2d9909dd6ebfb288fa318 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bb8bfb1b87a885a46cecbd8d842e2c13 = $(`<div id="html_bb8bfb1b87a885a46cecbd8d842e2c13" style="width: 100.0%; height: 100.0%;"><b>Wat Doi Suthep</b><br>Chiang Mai: Templo sagrado en la montaña con vistas panorámicas.</div>`)[0];
+                popup_e6d48dfa95b2d9909dd6ebfb288fa318.setContent(html_bb8bfb1b87a885a46cecbd8d842e2c13);
+            
+        
+
+        marker_56779739bc684c0186cd019f2b14640f.bindPopup(popup_e6d48dfa95b2d9909dd6ebfb288fa318)
+        ;
+
+        
+    
+    
+            marker_56779739bc684c0186cd019f2b14640f.bindTooltip(
+                `<div>
+                     Wat Doi Suthep
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56779739bc684c0186cd019f2b14640f.setIcon(icon_ed6189bee5ef7764e670a1d3d24335a6);
+            
+</script>
+</html>
